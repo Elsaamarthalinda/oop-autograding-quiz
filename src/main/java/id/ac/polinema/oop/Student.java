@@ -18,24 +18,30 @@ public class Student {
      * @param name      Student's full name
      * @param gpa       Grade Point Average (0.0 - 4.0)
      */
+
+    private String studentId;
+    private String name;
+    private double gpa;
+    
     public Student(String studentId, String name, double gpa) {
         // TODO: store parameters into fields
-        throw new UnsupportedOperationException("Not implemented yet");
+        this.studentId = studentId;
+        this.name = name;
+        this.gpa = gpa;
     }
 
     public String getStudentId() {
-        // TODO: return studentId
-        throw new UnsupportedOperationException("Not implemented yet");
+        return studentId;
     }
 
     public String getName() {
         // TODO: return name
-        throw new UnsupportedOperationException("Not implemented yet");
+        return name;
     }
 
     public double getGpa() {
         // TODO: return gpa
-        throw new UnsupportedOperationException("Not implemented yet");
+        return gpa;
     }
 
     /**
@@ -48,6 +54,12 @@ public class Student {
      */
     public String getPredicate() {
         // TODO: implement the predicate logic per the rules above
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (gpa >= 3.5) {
+            return "Cum Laude";
+        } else if (gpa >= 3.0) {
+            return "Very Satisfactory";
+        } else {
+            return "Satisfactory";
+        }
     }
 }
