@@ -57,6 +57,9 @@ public class Student {
         if (gpa >= 3.5) {
             return "Cum Laude";
         }
+        if (gpa >= 3.0) {
+            return "Very Satisfactory";
+        }
+        return "Satisfactory";
     }
 }
-
