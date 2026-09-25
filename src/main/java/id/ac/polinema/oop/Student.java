@@ -56,10 +56,6 @@ public class Student {
         // TODO: implement the predicate logic per the rules above
         if (gpa >= 3.5) {
             return "Cum Laude";
-        } else if (gpa >= 3.0) {
-            return "Very Satisfactory";
-        } else {
-            return "Satisfactory";
         }
     }
 }
